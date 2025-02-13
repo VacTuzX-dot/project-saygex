@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดอันดับมหาวิทยาลัยในประเทศไทย</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFAEC;
+            text-align: center;
+        }
+        header {
+            background-color: #CBA35C;
+            color: #FFFAEC;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #B8904D;
+            padding: 10px;
+        }
+        nav a {
+            color: #FFFAEC;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #CBA35C;
+            color: white;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #CBA35C;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #B8904D;
+        }
+
+        /* รูปภาพที่มีขนาดกำหนด */
+        .university-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* ช่องข้อมูลเพิ่มเติม */
+        .additional-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .additional-info label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .additional-info textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .add-info-button {
+            background-color: #CBA35C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .add-info-button:hover {
+            background-color: #B8904D;
+        }
+        .university-image {
+    width: 100px; /* กำหนดขนาดความกว้างของรูป */
+    height: 100px; /* กำหนดขนาดความสูงของรูป */
+    object-fit: contain; /* ป้องกันภาพผิดสัดส่วน */
+    border: 1px solid #ccc; /* เส้นขอบรูปภาพ */
+    padding: 5px;
+    background-color: white;
+}
+
+.info-button {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: #D2B48C; /* สีพื้นหลังปุ่ม */
+    border: 2px solid #8B6914; /* กรอบปุ่ม */
+    border-radius: 5px; /* ทำให้ขอบโค้งมน */
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-button:hover {
+    background-color: #8B5A2B;
+    border-color: #8B7355;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>จัดอันดับมหาวิทยาลัยในประเทศไทย</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="https://www.mytcas.com/">ข่าวสาร</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+
+    <section>
+        <h2>เกณฑ์การจัดอันดับ</h2>
+        <ul>
+            <li>ชื่อเสียงทางวิชาการ</li>
+            <li>คุณภาพงานวิจัย</li>
+            <li>ความเป็นนานาชาติ</li>
+            <li>การจ้างงานบัณฑิต</li>
+        </ul>
+    </section>
+
+    <section>
+            <tbody>
+                <!-- ตัวอย่างการเพิ่มมหาวิทยาลัย -->
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>มหาวิทยาลัย</th>
+                        <th>เกณฑ์การรับสมัคร</th>
+                        <th>รูปภาพ</th>
+                        <th>ข้อมูลเพิ่มเติม</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>จุฬาลงกรณ์มหาวิทยาลัย</td>
+                        <td>GPAX 3.50 / T-PAT / TGAT</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_of_Chulalongkorn_University.svg/1200px-Logo_of_Chulalongkorn_University.svg.png" alt="" class="university-image"></td>
+                        <td><a href="Chulalongkorn University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>มหาวิทยาลัยมหิดล</td>
+                        <td>GPAX 3.40 / T-PAT / TGAT</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mahidol_U.png/800px-Mahidol_U.png" alt="" class="university-image"></td>
+                        <td><a href="Mahidol University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>มหาวิทยาลัยเกษตรศาสตร์</td>
+                        <td>GPAX 3.00 / T-PAT / TGAT</td>
+                        <td><img src="https://envi2.ku.ac.th//assets/images/component/logo/ku_color_big.png" alt="" class="university-image"></td>
+                        <td><a href="Kasetsart University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>มหาวิทยาลัยธรรมศาสตร์</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://thaimooc.org/sites/default/files/2021-12/tu_11.png" alt="" class="university-image"></td>
+                        <td><a href="Thammasat University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>มหาวิทยาลัยเชียงใหม่</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/th/thumb/d/db/Chiang_Mai_University.svg/800px-Chiang_Mai_University.svg.png" alt="" class="university-image"></td>
+                        <td><a href="Chiang Mai University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>มหาวิทยาลัยสงขลานครินทร์</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://www.psu.ac.th/img/introduce/introduce3/psu_logo_01.png" alt="" class="university-image"></td>
+                        <td><a href="Prince of Songkla University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://www.kmutt.ac.th/wp-content/uploads/2020/09/KMUTT_CI_Primary_Logo-Full.png" alt="" class="university-image"></td>
+                        <td><a href="King Mongkut_s University of Technology Thonburi.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png" alt="" class="university-image"></td>
+                        <td><a href="King Mongkut_s Institute of Technology Ladkrabang.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>มหาวิทยาลัยขอนแก่น</td>
+                        <td>GPAX 3.20 / T-PAT / TGAT</td>
+                        <td><img src="https://building.kku.ac.th/wp-content/uploads/2019/11/Th_color-696x1237-169x300.png" alt="" class="university-image"></td>
+                        <td><a href="Khon Kaen University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>มหาวิทยาลัยบูรพา</td>
+                    <td>GPAX 3.20 / T-PAT / TGAT</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Logo_of_Burapha_University.svg/1200px-Logo_of_Burapha_University.svg.png" alt="" class="university-image"></td>
+                    <td><a href="Burapha University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+                </tr>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>มหาวิทยาลัยพะเยา</td>
+                <td>GPAX 3.20 / T-PAT / TGAT</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_Phayao.svg/1200px-Logo_of_University_of_Phayao.svg.png" alt="" class="university-image"></td>
+                <td><a href="University of Phayao.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+            </tr>
+        </tr>
+        <tr>
+             <td>12</td>
+             <td>มหาวิทยาลัยศิลปากร</td>
+             <td>GPAX 3.20 / T-PAT / TGAT</td>
+             <td><img src="https://upload.wikimedia.org/wikipedia/th/thumb/7/77/Silpakorn_University_Emblem.svg/1200px-Silpakorn_University_Emblem.svg.png" alt="" class="university-image"></td>
+             <td><a href="Silpakorn University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+           </tr>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>มหาวิทยาลัยนเรศว</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/th/thumb/3/3a/Naresuan_University_Logo.svg/1200px-Naresuan_University_Logo.svg.png" alt="" class="university-image"></td>
+            <td><a href="Naresuan University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>14</td>
+            <td>มหาวิทยาลัยแม่ฟ้าหลวง</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/th/d/da/%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%93%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%9F%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87.png" alt="" class="university-image"></td>
+            <td><a href="Mae Fah Luang University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>15</td>
+            <td>มหาวิทยาลัยเทคโนโลยีราชมงคล</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://larts.rmutp.ac.th/2554/wp-content/uploads/2019/03/PRANAKORN-color-transparency1-230x421.png" alt="" class="university-image"></td>
+            <td><a href="rajamangala university of technology.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>16</td>
+            <td>มหาวิทยาลัยวลัยลักษณ์</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://library.wu.ac.th/content/wp-content/uploads/sites/8/2022/02/02-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87.png" alt="" class="university-image"></td>
+            <td><a href="Walailak University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>17</td>
+            <td>มหาวิทยาลัยศรีปทุม</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_of_Sripatum_University.svg/1200px-Logo_of_Sripatum_University.svg.png" alt="" class="university-image"></td>
+            <td><a href="Sripatum University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>18</td>
+            <td>มหาวิทยาลัยกรุงเทพ</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/th/9/9f/BULogo.svg" alt="" class="university-image"></td>
+            <td><a href="Bangkok University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>19</td>
+            <td> มหาวิทยาลัยรังสิต</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/th/thumb/d/d0/Rangsit_University_Logo.svg/1200px-Rangsit_University_Logo.svg.png" alt="" class="university-image"></td>
+            <td><a href="Rangsit University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+         <tr>
+            <td>20</td>
+            <td>มหาวิทยาลัยอัสสัมชัญ</td>
+            <td>GPAX 3.20 / T-PAT / TGAT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/th/0/04/Logoabac.png" alt="" class="university-image"></td>
+            <td><a href="Assumption University.html" class="info-button">ดูข้อมูลเพิ่มเติม</a></td>
+          </tr>
+         </tr>
+    <script>
+        // ฟังก์ชันเพื่อแสดงหรือซ่อนข้อมูลเพิ่มเติม
+        function addInfo(university) {
+            const infoSection = document.getElementById(university + '-info');
+            if (infoSection.style.display === "none") {
+                infoSection.style.display = "block";
+            } else {
+                infoSection.style.display = "none";
+            }
+        }
+    </script>
+       <div class="button-container">
+        <button onclick="location.href='Calculate gpax.html'">GPAX</button>
+        <button onclick="location.href='Calculate gpa.html'">GPA</button>
+    </div>
+</body>
+</html>

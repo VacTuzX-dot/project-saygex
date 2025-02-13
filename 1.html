@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Rankings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> อันดับมหาวิทยาลัยชั้นนำในประเทศไทย  </h1>
+    </header>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navbar">
+      <a class="active" href="1.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+      <a href="https://youtu.be/I8ir3AMcmRY?si=MJS_R7R6w23vd_IY"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <div class="content">
+        <section id="ranking">
+            <h2>อันดับของมหาลัย</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>University</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>จุฬาลงกรณ์มหาวิทยาลัย</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>มหาวิทยาลัยมหิดล</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>มหาวิทยาลัยเกษตรศาสตร์</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>มหาวิทยาลัยธรรมศาสตร์</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>มหาวิทยาลัยเชียงใหม่</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>มหาวิทยาลัยสงขลานครินทร์</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>มหาวิทยาลัยขอนแก่น</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>มหาวิทยาลัยบูรพา</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>มหาวิทยาลัยพะเยา</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>มหาวิทยาลัยศิลปากร</td>
+                        <td>63</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>มหาวิทยาลัยนเรศวร</td>
+                        <td>61</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>มหาวิทยาลัยแม่ฟ้าหลวง</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>มหาวิทยาลัยเทคโนโลยีราชมงคล</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>มหาวิทยาลัยวลัยลักษณ์</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>มหาวิทยาลัยศรีปทุม</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>มหาวิทยาลัยกรุงเทพ</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>มหาวิทยาลัยรังสิต</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>มหาวิทยาลัยอัสสัมชัญ</td>
+                        <td>45</td>
+                    </tr>
+                    
+                  </tr>
+              </tbody>
+            </table>
+        </section>
+        
+
+        <div class="sources-criteria">
+            <section id="sources">
+                <h2>แหล่งที่มาของข้อมูล</h2>
+                <p>ข้อมูลในหน้านี้รวบรวมจากแหล่งข้อมูลที่น่าเชื่อถือ เช่น:</p>
+                <ul>
+                    <li>QS World University Rankings</li>
+                    <li>Times Higher Education (THE)</li>
+                    <li>ข้อมูลจากเว็บไซต์ทางการของมหาวิทยาลัย</li>
+                </ul>
+            </section>
+            <section id="criteria">
+                <h2>เกณฑ์การจัดอันดับ</h2>
+                <p>การจัดอันดับใช้เกณฑ์ดังนี้:</p>
+                <ul>
+                    <li>คุณภาพของการเรียนการสอน (30%)</li>
+                    <li>งานวิจัยและการตีพิมพ์ (30%)</li>
+                    <li>ความหลากหลายของนักศึกษาและบุคลากร (20%)</li>
+                    <li>การมีส่วนร่วมกับภาคธุรกิจและชุมชน (20%)</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="clarity-credibility">
+            <h2>ความชัดเจน ความน่าเชื่อถือ ความสมบูรณ์ และการเปรียบเทียบ</h2>
+            <div class="sources-criteria">
+                <h3>ความชัดเจน</h3>
+                <p>ตารางจัดอันดับนี้จัดทำขึ้นเพื่อให้ผู้อ่านเข้าใจวัตถุประสงค์และเกณฑ์การจัดอันดับมหาวิทยาลัยในประเทศไทยได้อย่างชัดเจน โดยการแบ่งคะแนนตามคุณภาพการเรียนการสอน งานวิจัย และการมีส่วนร่วมในชุมชน</p>
+                
+                <h3>ความน่าเชื่อถือ</h3>
+                <p>ข้อมูลในตารางรวบรวมจากแหล่งข้อมูลที่น่าเชื่อถือ เช่น QS World University Rankings และ Times Higher Education พร้อมทั้งอ้างอิงข้อมูลจากเว็บไซต์ทางการของมหาวิทยาลัย</p>
+                
+                <h3>ความสมบูรณ์</h3>
+                <p>ข้อมูลจัดอันดับในตารางได้เพิ่มรายละเอียดที่ครอบคลุม เช่น คะแนนเปรียบเทียบในด้านต่างๆ เพื่อช่วยให้ผู้อ่านเห็นภาพรวมและลำดับของมหาวิทยาลัยได้ดียิ่งขึ้น</p>
+                
+                <h3>การเปรียบเทียบ</h3>
+                <p>ตารางคะแนนและกราฟที่แสดงในหน้านี้ช่วยให้ผู้อ่านสามารถเปรียบเทียบอันดับและความแตกต่างระหว่างมหาวิทยาลัยได้ง่ายขึ้น อีกทั้งยังสามารถนำข้อมูลนี้ไปใช้ในการศึกษาหรือตัดสินใจเลือกสถาบันการศึกษาได้</p>
+            </div>
+        </section>
+
+        <section id="chart" class="chart-container">
+            <h2>การเปรียบเทียบคะแนนมหาวิทยาลัย</h2>
+            <canvas id="rankingChart"></canvas>
+        </section>
+    </div>
+        <script src="javaScript.js"></script>
+</body>
+
+</html>
+

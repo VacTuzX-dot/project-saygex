@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+}
+
+header {
+    background: linear-gradient(135deg,#CD853F 0%, #DEB887 0%, #F5F5DC 100%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+width: 100%;
+background-color: #8B7355;
+overflow: auto;
+}
+
+.navbar a {
+float: right;
+text-align: center;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background-color: #D2B48C;
+}
+
+.active {
+background-color: #8B7E66;
+}
+
+
+@media screen and (max-width: 500px) {
+.navbar a {
+float: none;
+display: block;
+}
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #B8860B;
+}
+
+table th {
+    background-color: #B8860B;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #FAFAD2;
+}
+
+.chart-container {
+    margin: 40px 0;
+}
+.container {
+display: flex;
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+}
+
+.sidebar-left, .sidebar-right {
+width: 20%;
+padding: 20px;
+background-color: #FFF8DC;
+border: 1px solid #DEB887;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+width: 60%;
+padding: 20px;
+}
+.sources-criteria {
+background-color: #FFF8DC;
+padding: 20px;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 1200px;
+}
+
+.sources-criteria h2 {
+color: #8B7355;
+}
+
+.sources-criteria ul {
+list-style-type: square;
+padding-left: 20px;
+}
+#clarity-credibility {
+background-color: #FFF8DC;
+padding: 20px;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 1200px;
+}
+
+#clarity-credibility h3 {
+color: #8B7355;
+margin-top: 15px;
+}
+
+#clarity-credibility p {
+color: #333333;
+margin-bottom: 10px;
+}
+
+        section {
+            border: 2px solid #B8860B;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #B8860B;
+        }
